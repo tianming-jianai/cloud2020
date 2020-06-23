@@ -8,13 +8,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @BelongsProject: cloud2020
  * @BelongsPackage: com.atguigu.springcloud
  * @Author: shiga
- * @CreateTime: 2020-06-22 16:32
+ * @CreateTime: 2020-06-23 16:38
  * @Description:
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class PaymentMain8004 {
+public class OrderConsulMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8004.class, args);
+        SpringApplication.run(OrderConsulMain80.class, args);
     }
 }

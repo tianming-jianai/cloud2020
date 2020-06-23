@@ -1,0 +1,16 @@
+#consul服务器端口号
+server:
+  port: 8006
+
+# 服务别名：注册zookeeper到注册中心名称
+spring:
+  application:
+    name: cloud-payment-service
+#    consul注册中心地址
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+#        hostname: 127.0.0.1
