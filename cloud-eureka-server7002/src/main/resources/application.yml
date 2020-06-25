@@ -12,5 +12,10 @@ eureka:
     register-with-eureka: false  #不把自己注册到eureka上；
     fetch-registry: false  #不从eureka来获取服务的注册信息
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7002.com/eureka/
+      # defaultZone: http://eureka7001.com:7001/eureka/
      # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    # 关闭自我保护，保证服务不可用时及时剔除
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 2000
