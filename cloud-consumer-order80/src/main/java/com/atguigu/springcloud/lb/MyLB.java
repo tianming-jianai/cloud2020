@@ -31,6 +31,11 @@ public class MyLB implements LoadBalance {
         return next;
     }
 
+    /**
+     * 负债均衡算法：rest接口第几册请求数 % 服务器集群总数量 = 实际调用服务器位置下标，每次服务重启后rest接口技术从1开始
+     * @param serviceInstances
+     * @return
+     */
     @Override
     public ServiceInstance instances(List<ServiceInstance> serviceInstances) {
         int index = getAndIncrement() % serviceInstances.size();
