@@ -2,21 +2,21 @@ package com.atguigu.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @BelongsProject: cloud2020
  * @BelongsPackage: com.atguigu.springcloud
  * @Author: shiga
- * @CreateTime: 2020-06-25 21:51
+ * @CreateTime: 2020-06-26 01:38
  * @Description:
  */
 @SpringBootApplication
-@EnableEurekaClient
-@EnableCircuitBreaker
-public class PaymentHystrixMain8001 {
+@EnableFeignClients
+@EnableHystrix
+public class OrderHystrixMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentHystrixMain8001.class, args);
+        SpringApplication.run(OrderHystrixMain80.class, args);
     }
 }
