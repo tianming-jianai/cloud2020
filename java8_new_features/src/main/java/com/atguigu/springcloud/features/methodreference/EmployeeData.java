@@ -17,7 +17,7 @@ public class EmployeeData {
 
         list.add(new Employee(1001,"马化腾",34,6000.38));
         list.add(new Employee(1001,"马云",55,5000.38));
-        list.add(new Employee(1001,"刘强东",56,8000.38));
+        list.add(new Employee(1001,"刘强东",45,8000.38));
         list.add(new Employee(1001,"雷军",45,6500.38));
         list.add(new Employee(1001,"李彦宏",65,10000.38));
         list.add(new Employee(1001,"比尔盖茨",43,7300.38));
