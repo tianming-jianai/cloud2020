@@ -17,6 +17,18 @@ public class Employee {
     private String firstName;
     private String lastName;
 
+    public Employee() {
+    }
+
+    public Employee(Integer id) {
+        this.id = id;
+    }
+
+    public Employee(Integer id, Integer age) {
+        this.id = id;
+        this.age = age;
+    }
+
     public static Predicate<Employee> ageGreaterThan70 = x -> x.getAge() > 70;
 
 
