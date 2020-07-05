@@ -22,6 +22,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.3.7</version>
+        </dependency>
         <!-- 引用自己定义的api通用包，可以使用Payment支付Entity -->
         <dependency>
             <groupId>com.atguigu.springcloud</groupId>
