@@ -21,3 +21,8 @@ eureka:
 #    # 关闭自我保护机制，保证服务不可用时及时剔除
 #    enable-self-preservation: false
 #    eviction-interval-timer-in-ms: 2000
+
+# 需要配置host域名映射
+#  C:\Windows\System32\drivers\etc
+#  127.0.0.1 eureka7001.com
+#  127.0.0.1 eureka7002.com
