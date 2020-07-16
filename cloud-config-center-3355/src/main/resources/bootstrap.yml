@@ -15,3 +15,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+# 需要运维人员发送Post请求刷新3355
+# curl -X POST "http://localhost:3355/actuator/refresh"
