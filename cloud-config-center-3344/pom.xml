@@ -9,37 +9,27 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-gateway-gateway9527</artifactId>
+    <artifactId>cloud-config-center-3344</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>io.projectreactor.netty</groupId>
-            <artifactId>reactor-netty</artifactId>
-            <version>0.9.7.RELEASE</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webflux -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webflux</artifactId>
-            <version>5.2.6.RELEASE</version>
-        </dependency>
-        <!-- gateway -->
+        <!-- config server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.projectreactor.netty</groupId>
-                    <artifactId>reactor-netty</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <!--eureka client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <!--热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -52,6 +42,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-
 </project>

@@ -1,0 +1,20 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center #注册进Eureka服务器的微服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:tianming-jianai/springcloud-config.git #Github上面的git仓库
+          search-paths: # 搜索目录
+            - springcloud-cofig
+        default-label: master #读取分支master
+eureka:
+  client:
+    service-url:
+      defaultZone:
+    fetch-registry: true
+    register-with-eureka: true
+#服务注册到Eureka上
