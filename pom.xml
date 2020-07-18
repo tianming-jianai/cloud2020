@@ -26,6 +26,7 @@
         <module>cloud-gateway-gateway9527</module>
         <module>cloud-config-center-3344</module>
         <module>cloud-config-center-3355</module>
+        <module>juc</module>
     </modules>
     <packaging>pom</packaging>
 
