@@ -13,15 +13,27 @@ spring:
           username: tianming-jianai
           password: 1724473740zsG
         default-label: master #读取分支master
+  # rabbitmq相关配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+#服务注册到Eureka上
 eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
     fetch-registry: true
     register-with-eureka: true
-#服务注册到Eureka上
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
 
+# 备注：
 # 需要配置host域名映射
 #  C:\Windows\System32\drivers\etc
 #  127.0.0.1 config-3344.com
